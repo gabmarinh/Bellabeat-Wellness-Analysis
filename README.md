@@ -10,34 +10,34 @@
 ---
 
 ## 📑 Executive Summary
-[cite_start]Bellabeat, a high-tech manufacturer of health-focused products for women, aims to become a larger player in the global smart device market[cite: 236]. By analyzing smart device usage data from non-Bellabeat products (Fitbit), I identified key opportunities in **sleep tracking consistency** and **sedentary behavior management**. My recommendation is to reposition the **Bellabeat Leaf** and **App** not just as trackers, but as holistic 24/7 wellness coaches that prioritize comfort and actionable alerts.
+Bellabeat, a high-tech manufacturer of health-focused products for women, aims to become a larger player in the global smart device market. By analyzing smart device usage data from non-Bellabeat products (Fitbit), I identified key opportunities in **sleep tracking consistency** and **sedentary behavior management**. My recommendation is to reposition the **Bellabeat Leaf** and **App** not just as trackers, but as holistic 24/7 wellness coaches that prioritize comfort and actionable alerts.
 
 ---
 
 ## 1. ❓ Ask Phase
 ### Business Task
-[cite_start]Urška Sršen, Bellabeat’s co-founder, has requested an analysis of smart device usage data to gain insight into how consumers use non-Bellabeat smart devices[cite: 274]. [cite_start]The goal is to apply these insights to one Bellabeat product to influence the marketing strategy[cite: 275].
+Urška Sršen, Bellabeat’s co-founder, has requested an analysis of smart device usage data to gain insight into how consumers use non-Bellabeat smart devices. The goal is to apply these insights to one Bellabeat product to influence the marketing strategy.
 
 ### Key Questions
-1.  [cite_start]What are some trends in smart device usage? [cite: 277]
-2.  [cite_start]How could these trends apply to Bellabeat customers? [cite: 278]
-3.  [cite_start]How could these trends help influence Bellabeat marketing strategy? [cite: 279]
+1.  What are some trends in smart device usage?
+2.  How could these trends apply to Bellabeat customers?
+3.  How could these trends help influence Bellabeat marketing strategy?
 
 ### Stakeholders
-* [cite_start]**Urška Sršen:** Bellabeat’s cofounder and Chief Creative Officer[cite: 244].
-* [cite_start]**Marketing Analytics Team:** Responsible for collecting and analyzing data to guide strategy[cite: 246].
+* **Urška Sršen:** Bellabeat’s cofounder and Chief Creative Officer.
+* **Marketing Analytics Team:** Responsible for collecting and analyzing data to guide strategy.
 
 ---
 
 ## 2. 💻 Prepare Phase
 ### Data Source
-[cite_start]I utilized the **FitBit Fitness Tracker Data** (CC0: Public Domain, available via Kaggle)[cite: 300]. [cite_start]This dataset contains personal fitness tracker data from **thirty (30) eligible Fitbit users** who consented to submit their personal tracker data[cite: 300, 301].
+I utilized the **FitBit Fitness Tracker Data** (CC0: Public Domain, available via Kaggle). This dataset contains personal fitness tracker data from **thirty (30) eligible Fitbit users** who consented to submit their personal tracker data.
 
 ### Data Organization & Integrity (ROCCC Analysis)
-* **Reliable:** Low. [cite_start]The sample size (30 users) is small and may not fully represent the global female population Bellabeat targets[cite: 300].
+* **Reliable:** Low. The sample size (30 users) is small and may not fully represent the global female population Bellabeat targets.
 * **Original:** No. Collected by a third party (Amazon Mechanical Turk).
-* **Comprehensive:** Medium. [cite_start]Includes daily activity, steps, heart rate, and sleep monitoring, but lacks demographic info[cite: 301, 302].
-* [cite_start]**Current:** No. Data is from 2016. Habits may have evolved[cite: 300].
+* **Comprehensive:** Medium. Includes daily activity, steps, heart rate, and sleep monitoring, but lacks demographic info.
+* **Current:** No. Data is from 2016. Habits may have evolved.
 * **Cited:** Yes.
 
 *Strategy:* Despite limitations, this data provides a directional baseline for general usage habits (steps vs. sleep) which is sufficient for this initial exploratory analysis.
@@ -45,7 +45,7 @@
 ---
 
 ## 3. 🛠 Process Phase
-[cite_start]I selected **R** for this analysis due to its strong visualization libraries (`ggplot2`) and ability to handle multiple dataframes efficiently[cite: 344].
+I selected **R** for this analysis due to its strong visualization libraries (`ggplot2`) and ability to handle multiple dataframes efficiently.
 
 ### Code Snippet: Setting up and Merging
 I focused on three key dataframes: `dailyActivity`, `sleepDay`, and `weightLog`.
