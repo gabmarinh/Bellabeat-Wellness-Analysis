@@ -63,11 +63,11 @@ Data Cleaning Steps
 1. Date Formatting: Fitbit data often has inconsistent timestamp formats. I standardized them to Date type.
 2. Renaming: Renamed columns to ensure consistency before merging.
 3. Merging: Combined activity and sleep data into a single dataframe for cross-analysis.
+```r
 # Cleaning Date Formats 
 daily_activity$ActivityDate <- as.Date(daily_activity$ActivityDate, format="%m/%d/%Y")
 sleep_day$SleepDay <- as.Date(sleep_day$SleepDay, format="%m/%d/%Y")
 
-```r
 # Merging Data
 combined_data <- merge(daily_activity, sleep_day, by.x=c("Id", "ActivityDate"), by.y=c("Id", "SleepDay"))
 ```
